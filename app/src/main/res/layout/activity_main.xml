@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/IdPrecoFeij"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/Produtos"
+        android:layout_width="214dp"
+        android:layout_height="330dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IdTabelaProdutos">
+
+        <CheckBox
+            android:id="@+id/IdFeijao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feijão" />
+
+        <CheckBox
+            android:id="@+id/IdLeite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leite" />
+
+        <CheckBox
+            android:id="@+id/IdMacarrao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Macarrão" />
+
+        <CheckBox
+            android:id="@+id/IdFarofa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Farofa" />
+
+        <CheckBox
+            android:id="@+id/IdRefrigerante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refrigerante" />
+
+        <CheckBox
+            android:id="@+id/IdBatata_frita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Batata-frita " />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="126dp"
+        android:layout_height="328dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toEndOf="@+id/Produtos"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <TextView
+
+            android:id="@+id/IdPrecoFeijo"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="R$ 2.69" />
+
+        <TextView
+            android:id="@+id/IdPrecoLeite"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="R$ 2.70" />
+
+        <TextView
+            android:id="@+id/IdPrecoMacarrao"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="16.70" />
+
+        <TextView
+            android:id="@+id/IdPrecoFarofa"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="3.30" />
+
+        <TextView
+            android:id="@+id/IdPrecoRefri"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="R$ 3.00" />
+
+        <TextView
+            android:id="@+id/IdPrecoBatata"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="R$ 5.00" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/IdTabelaProdutos"
+        android:layout_width="198dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="84dp"
+        android:text="Produtos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="107dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="84dp"
+        android:text="Preço"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/IdTabelaProdutos"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:onClick="IrParaFinalizarCompra"
+        android:text="Finalizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Produtos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
